@@ -20,7 +20,7 @@
 		"husky": "^9.1.6",
 		"lint-staged": "^16.2.7",
 		"shadcn": "^3.8.5",
-		"turbo": "^2.8.12",
+		"turbo": "^2.8.19",
 		"typescript": "catalog:"
 	},
 	"engines": {
