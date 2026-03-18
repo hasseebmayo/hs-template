@@ -1,0 +1,29 @@
+{
+	"name": "@repo/api",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"exports": {
+		".": "./src/index.ts"
+	},
+	"scripts": {
+		"dev": "bun run --hot src/index.ts",
+		"build": " bun build src/index.ts --outdir=dist",
+		"lint": "biome check .",
+		"lint:fix": "biome check --write .",
+		"format": "biome format --write .",
+		"format:check": "biome format .",
+		"check-types": "tsc --noEmit",
+		"test": "bun test"
+	},
+	"devDependencies": {
+		"@hono/zod-openapi": "catalog:",
+		"@repo/typescript": "workspace:*",
+		"@types/node": "^25.3.2",
+		"typescript": "catalog:"
+	},
+	"dependencies": {
+		"hono": "catalog:",
+		"@repo/core": "workspace:*"
+	}
+}

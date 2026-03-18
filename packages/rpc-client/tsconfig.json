@@ -1,0 +1,20 @@
+{
+	"extends": "@repo/typescript/base.json",
+	"compilerOptions": {
+		"rootDir": "../..",
+		"outDir": "dist",
+		"declaration": true,
+		"composite": false,
+		"paths": {
+			"@repo/api": ["../../apps/api/src/index.ts"],
+			"~/*": ["../../apps/api/src/*"],
+			"@repo/core": ["../../packages/core/src/index.ts"],
+			"@repo/core/lib": ["../../packages/core/src/lib/index.ts"],
+			"@repo/core/routing": ["../../packages/core/src/routing/index.ts"],
+			"@repo/core/openapi": ["../../packages/core/src/openapi/index.ts"],
+			"@repo/core/status": ["../../packages/core/src/status/index.ts"],
+			"@repo/core/middleware": ["../../packages/core/src/middleware/index.ts"]
+		}
+	},
+	"include": ["src"]
+}

@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+# Validate commit message format using commitlint
+bunx --no -- commitlint --edit "$1"

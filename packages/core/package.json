@@ -1,0 +1,67 @@
+{
+	"name": "@repo/core",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.js"
+		},
+		"./lib": {
+			"types": "./dist/lib/index.d.ts",
+			"import": "./dist/lib/index.js"
+		},
+		"./routing": {
+			"types": "./dist/routing/index.d.ts",
+			"import": "./dist/routing/index.js"
+		},
+		"./http": {
+			"types": "./dist/http/index.d.ts",
+			"import": "./dist/http/index.js"
+		},
+		"./utils": {
+			"types": "./dist/utils/index.d.ts",
+			"import": "./dist/utils/index.js"
+		},
+		"./status": {
+			"types": "./dist/status/index.d.ts",
+			"import": "./dist/status/index.js"
+		},
+		"./openapi": {
+			"types": "./dist/openapi/index.d.ts",
+			"import": "./dist/openapi/index.js"
+		},
+		"./middleware": {
+			"types": "./dist/middleware/index.d.ts",
+			"import": "./dist/middleware/index.js"
+		},
+		"./phrases": {
+			"types": "./dist/phrases/index.d.ts",
+			"import": "./dist/phrases/index.js"
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "tsdown",
+		"lint": "biome check .",
+		"check-types": "tsc --noEmit"
+	},
+	"dependencies": {
+		"@aws-sdk/client-s3": "^3.991.0",
+		"@aws-sdk/s3-request-presigner": "^3.991.0",
+		"@hono/zod-openapi": "catalog:",
+		"@scalar/hono-api-reference": "^0.9.45",
+		"hono": "catalog:",
+		"zod": "catalog:"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.4.4",
+		"@repo/typescript": "workspace:*",
+		"@types/node": "^25.3.2",
+		"tsdown": "^0.21.0-beta.2",
+		"typescript": "catalog:"
+	}
+}

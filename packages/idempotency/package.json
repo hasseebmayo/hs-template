@@ -1,0 +1,24 @@
+{
+	"name": "@repo/idempotency",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"exports": {
+		".": "./src/index.ts",
+		"./storage": "./src/storage.ts"
+	},
+	"scripts": {
+		"lint": "biome check .",
+		"check-types": "tsc --noEmit"
+	},
+	"dependencies": {
+		"@repo/core": "workspace:*",
+		"@repo/redis": "workspace:*",
+		"hono": "catalog:",
+		"ioredis": "^5.4.2"
+	},
+	"devDependencies": {
+		"@repo/typescript": "workspace:*",
+		"typescript": "catalog:"
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"extends": "@repo/typescript/base.json",
+	"compilerOptions": {
+		"rootDir": "./src",
+		"outDir": "./dist",
+		"module": "nodenext",
+		"moduleResolution": "nodenext",
+		"declaration": true,
+		"declarationMap": false,
+		"incremental": false,
+		"skipLibCheck": true,
+		"types": ["node"],
+		"lib": ["es2020", "dom"]
+	},
+	"include": ["src"],
+	"exclude": ["node_modules"]
+}
