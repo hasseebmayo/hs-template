@@ -4,10 +4,7 @@
 	"private": true,
 	"type": "module",
 	"exports": {
-		".": {
-			"types": "./dist/index.d.ts",
-			"default": "./dist/index.js"
-		}
+		".": "./src/index.ts"
 	},
 	"scripts": {
 		"generate": "bunx auth generate --config ./src/auth.ts --output ../prisma/prisma/schema.prisma"

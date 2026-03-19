@@ -55,11 +55,12 @@
       "name": "@repo/api",
       "version": "0.0.0",
       "dependencies": {
+        "@hono/zod-openapi": "catalog:",
+        "@repo/auth": "workspace:*",
         "@repo/core": "workspace:*",
         "hono": "catalog:",
       },
       "devDependencies": {
-        "@hono/zod-openapi": "catalog:",
         "@repo/typescript": "workspace:*",
         "@types/node": "^25.3.2",
         "typescript": "catalog:",
