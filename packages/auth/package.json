@@ -1,0 +1,24 @@
+{
+	"name": "@repo/auth",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"default": "./dist/index.js"
+		}
+	},
+	"scripts": {
+		"generate": "bunx auth generate --config ./src/auth.ts --output ../prisma/prisma/schema.prisma"
+	},
+	"devDependencies": {
+		"@repo/typescript": "workspace:*",
+		"typescript": "catalog:",
+		"@repo/prisma": "workspace:*"
+	},
+	"dependencies": {
+		"@better-auth/prisma-adapter": "^1.5.5",
+		"better-auth": "^1.5.5"
+	}
+}
