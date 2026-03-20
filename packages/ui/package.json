@@ -8,6 +8,7 @@
 	},
 	"dependencies": {
 		"@radix-ui/react-slot": "^1.2.3",
+		"@tanstack/react-form": "^1.28.5",
 		"class-variance-authority": "^0.7.1",
 		"clsx": "^2.1.1",
 		"lucide-react": "^0.475.0",
@@ -32,6 +33,7 @@
 	"exports": {
 		"./globals.css": "./src/styles/globals.css",
 		"./postcss.config": "./postcss.config.mjs",
+		"./schema-form": "./src/form/schema-form.tsx",
 		"./lib/*": "./src/lib/*.ts",
 		"./components/*": "./src/components/*.tsx",
 		"./hooks/*": "./src/hooks/*.ts",

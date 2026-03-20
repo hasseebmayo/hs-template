@@ -16,6 +16,9 @@
     "check": "biome check"
   },
   "dependencies": {
+    "@repo/query-rpc": "workspace:*",
+    "@repo/rpc-client": "workspace:*",
+    "@repo/ui": "workspace:*",
     "@tailwindcss/vite": "^4.1.18",
     "@tanstack/react-devtools": "^0.7.0",
     "@tanstack/react-query": "catalog:",
@@ -27,9 +30,7 @@
     "react": "catalog:",
     "react-dom": "catalog:",
     "tailwindcss": "^4.1.18",
-    "@repo/ui": "workspace:*",
-    "@repo/rpc-client": "workspace:*",
-    "@repo/query-rpc": "workspace:*"
+    "zod": "^4.3.6"
   },
   "devDependencies": {
     "@tanstack/devtools-vite": "^0.3.11",
